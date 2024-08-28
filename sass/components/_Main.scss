@@ -1,0 +1,40 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        font-size: 40px;
+        padding: 50px 350px 60px 40px;
+        border: 3px solid #fafafa;
+        border-radius: 10px;
+        backdrop-filter: blur(3.5px);
+        div{
+            user-select: none;
+            span{
+                user-select: text;
+            }
+        }
+        button{
+            padding: 10px 70px 10px 70px;
+            font-size: 20px;
+            margin-top: 30px;
+            background-color: #272727;
+            border-radius: 10px;
+            opacity: 0.85;
+            &:hover{
+                opacity: 1;
+                scale: 1.1;
+                cursor: pointer;
+            }
+        }
+        .undContDiv{
+            display: flex;
+            gap: 300px;
+        }
+    }
+}
